@@ -1,2 +1,2 @@
 # hankiya.github.io
-blog
+A blog
