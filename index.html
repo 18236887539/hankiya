@@ -8,7 +8,9 @@
     <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 
 </head>
+
 <body>
+
 <div id="header_wrapper">
     <header>
         <div class="container">
@@ -74,10 +76,10 @@
             <div id="sanjiao"></div>
             <div id="calendar_day">
                 <ul>
-                    <li><a href="index.html">02.23</a></li>
-                    <li><a href="index.html">02.24</a></li>
-                    <li><a href="index.html">02.25</a></li>
-                    <li><a href="index.html">02.26</a></li>
+                    <li><a id="date01" href="index.html">02.13</a></li>
+                    <li><a id="date02" href="index.html">02.14</a></li>
+                    <li><a id="date03"  href="index.html">02.15</a></li>
+                    <li><a id="date04" href="index.html">02.16</a></li>
                 </ul>
             </div>
         </section>
@@ -94,5 +96,16 @@
         </ul>
     </footer>
 </div>
+
+<script language=JavaScript>
+    var today = new Date();
+    document.getElementById("date01").innerText = (today.getMonth() + 1 ) + "." + today.getDate();
+    var today1 = new Date(today.getTime()+ 1000 * 3600 * 24);
+    document.getElementById("date02").innerText = (today1.getMonth() + 1 ) + "." + today1.getDate();
+    var today2 = new Date(today.getTime()+ 2000 * 3600 * 24);
+    document.getElementById("date03").innerText = (today2.getMonth() + 1 ) + "." + today2.getDate();
+    var today3 = new Date(today.getTime()+3000 * 3600 * 24);
+    document.getElementById("date04").innerText = (today3.getMonth() + 1 ) + "." + today3.getDate();
+</script>
 </body>
 </html>
