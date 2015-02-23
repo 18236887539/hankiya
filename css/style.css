@@ -161,5 +161,9 @@ div#sanjiao {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
+}
 
+section.video{
+    padding: 0px;
+    background-color: #000;
 }
