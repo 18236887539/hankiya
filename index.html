@@ -1,34 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>集团信息</title>
+    <link href="css/style.css" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 
-    <title>Hankiya</title>
-  </head>
-
-  <body>
+</head>
+<body>
+<div id="header_wrapper">
     <header>
-      <div class="inner">
-        <h1>Hankiya</h1>
-        <h2>仿佛映当年翩若惊鸿影</h2>
-        <a href="https://github.com/18236887539/hankiya.github.io" class="button"><small>View project on</small> GitHub</a>
-      </div>
+        <div class="container">
+            <div id="logo">
+                <h1><a href="index.html"><img src="images/logo.png" alt="集团信息"> </a></h1>
+            </div>
+            <div id="sosuo">
+                <form action="index.html">
+                    <input type="text" placeholder="搜索其实很简单"><input type="submit" value="搜索">
+                </form>
+            </div>
+        </div>
     </header>
-	<video width="1366" height="840" controls="controls"  preload="auto">
-  <source src="backup.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+    <div id="nav">
+    <nav class="container">
+        <ul>
+            <li class="on"><a href="index.html">首页博客</a></li><li>
+            <a href="index.html">项目列表</a></li><li>
+            <a href="index.html">新闻列表</a></li><li>
+            <a href="index.html">内容页面</a></li><li>
+            <a href="index.html">关于我们</a></li>
+        </ul>
+    </nav>
+    </div>
+</div>
+<div id="body_wrapper" >
+    <div class="container">
 
- 
-  </body>
+
+    <article >
+        <section id="new_info">
+            <h4><a href="index.html">最近上传</a></h4><ul>
+                <li><a href="index.html"><img src="images/a1.jpg" width="150px" height="100px"></a></li>
+                <li><a href="index.html"><img src="images/a2.jpg"  width="150px" height="100px"></a></li>
+                <li><a href="index.html"><img src="images/a3.jpg"  width="150px" height="100px"></a></li>
+            </ul>
+        </section>
+        <section id="blog">
+            <div class="blog_item">
+                <h4><a href="index.html">Dagger - 快速的依赖注入器-官方文档翻译</a></h4>
+                <p>原文 Dagger - 快速依赖注入器(for android and java) 翻译作者将英文分成了两篇文章，本文将它们还原成了一篇。 文章译自dagger的 官方说明文档 , 不足之处欢迎指正! 引言 在程序中， 最重要的类是那些真正实现 功能 的类：比如 BarcodeDecoder (条形码解码</p>
+            </div>
+
+            <div class="blog_item">
+                <h4><a href="index.html">Android的第三方开发组件</a></h4>
+                <p>原文： http://fanxu.me/post/2013-06-06-1 基本上囊括了安卓开发中比较流行的组建与框架，对理清楚这些组件的关系有很大帮助，整理时添加了ActiveAndroid的介绍。 今天咱们聊聊Android的第三方开发组件。</p>
+            </div>
+            <div class="blog_item">
+                <h4><a href="index.html">与Service实现双向通信（一）</a></h4>
+                <p>经常有这样的应用场景，我们需要Client端调用Service完成一些事情，Service也可以通过回调通知客户端。 这是我写的第一个系列文章： 与Service实现双向通信（一） 与Service实现双向通信（二） 与Service实现双向通信（三） 这是系列文章的第一篇，本文主要实现</p>
+            </div>
+
+        </section>
+
+    </article>
+
+    <aside>
+        <section id="calendar">
+            <div id="calendar_img">
+                <h4><a href="index.html">日历</a></h4>
+                <img src="images/sunset.png" width="280px" height="90px">
+             </div>
+            <div id="sanjiao"></div>
+            <div id="calendar_day">
+                <ul>
+                    <li><a href="index.html">02.23</a></li>
+                    <li><a href="index.html">02.24</a></li>
+                    <li><a href="index.html">02.25</a></li>
+                    <li><a href="index.html">02.26</a></li>
+                </ul>
+            </div>
+        </section>
+    </aside>
+    </div>
+</div>
+<div id="fotter_wrapper" >
+    <footer >
+        <ul class="container">
+            <li><a href="https://github.com/18236887539">Github</a></li><li>
+            <a href="http://blog.csdn.net/hpu_zyh">Blog</a></li><li>
+            <a href="http://weibo.com/u/2359002991">Weibo</a></li><li>
+            <a href="https://plus.google.com/108483683629674597607/posts">Google+</a></li><li>
+        </ul>
+    </footer>
+</div>
+</body>
 </html>
