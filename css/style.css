@@ -9,6 +9,9 @@
     margin:0 auto;
 }
 
+#menu{
+    size:64px
+}
 
 div#body_wrapper {
     margin-top: 6px;
